@@ -1,0 +1,105 @@
+[00:16:36 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[00:16:37 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[00:16:37 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[00:16:37 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[00:16:37 Microsoft.Hosting.Lifetime [Information] Hosting environment: "Development"
+[00:16:37 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[00:16:40 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[00:16:40 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[00:16:41 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 180.1907ms
+[00:16:41 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 858.3653ms
+[00:16:41 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[00:16:41 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[00:16:41 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 15.8206ms
+[00:16:41 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.3984ms
+[00:16:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - -
+[00:16:42 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[00:16:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - - - 0 628 image/png 34.6536ms
+[00:16:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[00:16:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 319.4653ms
+[00:17:49 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 POST https://localhost:6036/api/Login application/json 49
+[00:17:50 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[00:17:50 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.LoginController.Login (Jwt)"'
+[00:17:50 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Login(Jwt.Services.DTOs.LoginUserDto)" on controller "Jwt.Controllers.LoginController" ("Jwt").
+[00:17:53 Microsoft.EntityFrameworkCore.Database.Command [Information] Executed DbCommand ("99"ms) [Parameters=["@__ToLower_0='?', @__dto_Password_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"FechaBaja\", t.\"Name\", t.\"Password\", t.\"Surname\", t.\"Username\", t0.\"RoleId\", t0.\"UserId\", t0.\"Id\", t0.\"FechaBaja\", t0.\"Name\"
+FROM (
+    SELECT u.\"Id\", u.\"FechaBaja\", u.\"Name\", u.\"Password\", u.\"Surname\", u.\"Username\"
+    FROM \"Users\" AS u
+    WHERE lower(u.\"Name\") = @__ToLower_0 AND u.\"Password\" = @__dto_Password_1
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u0.\"RoleId\", u0.\"UserId\", r.\"Id\", r.\"FechaBaja\", r.\"Name\"
+    FROM \"UserRole\" AS u0
+    INNER JOIN \"Roles\" AS r ON u0.\"RoleId\" = r.\"Id\"
+) AS t0 ON t.\"Id\" = t0.\"UserId\"
+ORDER BY t.\"Id\", t0.\"RoleId\", t0.\"UserId\""
+[00:17:53 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "OkObjectResult", writing value of type '"System.String"'.
+[00:17:53 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.LoginController.Login (Jwt)" in 3297.7166ms
+[00:17:53 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.LoginController.Login (Jwt)"'
+[00:17:53 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 POST https://localhost:6036/api/Login application/json 49 - 200 - text/plain;+charset=utf-8 3950.9154ms
+[11:41:32 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[11:41:32 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[11:41:32 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[11:41:32 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[11:41:32 Microsoft.Hosting.Lifetime [Information] Hosting environment: "Development"
+[11:41:32 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[11:41:36 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[11:41:36 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 709.0824ms
+[11:41:36 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[11:41:36 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[11:41:36 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 9.0905ms
+[11:41:37 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.3237ms
+[11:41:37 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - -
+[11:41:37 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[11:41:37 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - - - 0 628 image/png 74.4759ms
+[11:41:37 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[11:41:37 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 251.3613ms
+[11:41:50 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/1.1 POST https://localhost:6036//api/Login application/json 49
+[11:41:51 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: One or more errors occurred. (IDX12741: JWT: 'System.String' must have three segments (JWS) or five segments (JWE).)"
+[11:41:51 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/1.1 POST https://localhost:6036//api/Login application/json 49 - 404 0 - 683.9637ms
+[11:42:04 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 POST https://localhost:6036/api/Login application/json 49
+[11:42:04 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[11:42:04 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.LoginController.Login (Jwt)"'
+[11:42:04 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Login(Jwt.Services.DTOs.LoginUserDto)" on controller "Jwt.Controllers.LoginController" ("Jwt").
+[11:42:07 Microsoft.EntityFrameworkCore.Database.Command [Information] Executed DbCommand ("98"ms) [Parameters=["@__ToLower_0='?', @__dto_Password_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"FechaBaja\", t.\"Name\", t.\"Password\", t.\"Surname\", t.\"Username\", t0.\"RoleId\", t0.\"UserId\", t0.\"Id\", t0.\"FechaBaja\", t0.\"Name\"
+FROM (
+    SELECT u.\"Id\", u.\"FechaBaja\", u.\"Name\", u.\"Password\", u.\"Surname\", u.\"Username\"
+    FROM \"Users\" AS u
+    WHERE lower(u.\"Name\") = @__ToLower_0 AND u.\"Password\" = @__dto_Password_1
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u0.\"RoleId\", u0.\"UserId\", r.\"Id\", r.\"FechaBaja\", r.\"Name\"
+    FROM \"UserRole\" AS u0
+    INNER JOIN \"Roles\" AS r ON u0.\"RoleId\" = r.\"Id\"
+) AS t0 ON t.\"Id\" = t0.\"UserId\"
+ORDER BY t.\"Id\", t0.\"RoleId\", t0.\"UserId\""
+[11:42:07 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "OkObjectResult", writing value of type '"System.String"'.
+[11:42:07 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.LoginController.Login (Jwt)" in 3102.6438ms
+[11:42:07 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.LoginController.Login (Jwt)"'
+[11:42:07 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 POST https://localhost:6036/api/Login application/json 49 - 200 - text/plain;+charset=utf-8 3212.9104ms
+[11:42:39 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/1.1 POST https://localhost:6036/api/Login application/json 49
+[11:42:39 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: One or more errors occurred. (IDX12741: JWT: 'System.String' must have three segments (JWS) or five segments (JWE).)"
+[11:42:39 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.LoginController.Login (Jwt)"'
+[11:42:39 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Login(Jwt.Services.DTOs.LoginUserDto)" on controller "Jwt.Controllers.LoginController" ("Jwt").
+[11:42:39 Microsoft.EntityFrameworkCore.Database.Command [Information] Executed DbCommand ("9"ms) [Parameters=["@__ToLower_0='?', @__dto_Password_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"FechaBaja\", t.\"Name\", t.\"Password\", t.\"Surname\", t.\"Username\", t0.\"RoleId\", t0.\"UserId\", t0.\"Id\", t0.\"FechaBaja\", t0.\"Name\"
+FROM (
+    SELECT u.\"Id\", u.\"FechaBaja\", u.\"Name\", u.\"Password\", u.\"Surname\", u.\"Username\"
+    FROM \"Users\" AS u
+    WHERE lower(u.\"Name\") = @__ToLower_0 AND u.\"Password\" = @__dto_Password_1
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u0.\"RoleId\", u0.\"UserId\", r.\"Id\", r.\"FechaBaja\", r.\"Name\"
+    FROM \"UserRole\" AS u0
+    INNER JOIN \"Roles\" AS r ON u0.\"RoleId\" = r.\"Id\"
+) AS t0 ON t.\"Id\" = t0.\"UserId\"
+ORDER BY t.\"Id\", t0.\"RoleId\", t0.\"UserId\""
+[11:42:39 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "OkObjectResult", writing value of type '"System.String"'.
+[11:42:39 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.LoginController.Login (Jwt)" in 40.2429ms
+[11:42:39 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.LoginController.Login (Jwt)"'
+[11:42:39 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/1.1 POST https://localhost:6036/api/Login application/json 49 - 200 - text/plain;+charset=utf-8 106.5248ms
