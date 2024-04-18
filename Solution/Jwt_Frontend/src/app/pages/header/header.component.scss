@@ -1,0 +1,61 @@
+.logo_text{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 650;
+    color: #434343;
+    letter-spacing: 5px;
+}
+
+
+
+::ng-deep .p-menubar {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+::ng-deep .p-menubar .p-menubar-root-list{
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+::ng-deep p-menubarsub{
+    display: flex;
+    justify-content: end;
+}
+
+::ng-deep .p-menubar-end {
+    display: none;
+}
+
+::ng-deep .p-menuitem{
+    margin: 1em;
+}
+
+::ng-deep .p-menuitem-text {
+    text-decoration: none;
+    color: #434343;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 30px;
+}
+
+.menu-anchor{
+    text-decoration: none;
+}
+
+.menu-icon{
+    font-size: 30px;
+    color: #434343;
+}
+
+.menu-text{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #434343;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 30px;
+    margin: 0.5em;
+    font-weight: 500;
+}

@@ -147,87 +147,31 @@ CREATE TABLE public."__EFMigrationsHistory" (
 ALTER TABLE public."__EFMigrationsHistory" OWNER TO postgres;
 
 --
--- TOC entry 3364 (class 0 OID 16595)
--- Dependencies: 218
--- Data for Name: Methods; Type: TABLE DATA; Schema: public; Owner: postgres
---
-
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('41058866-8a02-4ff4-91c9-c1c5c8bf9065', 'GET', '/api/Method/GetByMicroservice', '3fa85f64-5717-4562-b3fc-2c963f66afa6', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('19565a4d-9516-4ec5-b911-724a2f181bd8', 'GET', '/api/Method/GetByRole', '3fa85f64-5717-4562-b3fc-2c963f66afa6', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('3e17df33-587a-467b-a777-3936d18ee115', 'POST', '/api/Roles/Post', '3fa85f64-5717-4562-b3fc-2c963f66afa6', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('66db3ba3-009d-4db0-99b7-53b0dda49dfa', 'POST', '/api/Microservice/Post', '3fa85f64-5717-4562-b3fc-2c963f66afa6', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('6f29b00c-5fe4-4952-9d03-a1d5b8d3ac86', 'POST', '/api/Login/Post', '3fa85f64-5717-4562-b3fc-2c963f66afa6', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('80dea577-c5fe-4195-9676-62eb04a48bcc', 'POST', '/api/SignUp/Post', '3fa85f64-5717-4562-b3fc-2c963f66afa6', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('959edc45-0522-4e89-a6ed-b88829bdd706', 'POST', '/api/Method/Post', '3fa85f64-5717-4562-b3fc-2c963f66afa6', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('c30a1c25-b3af-44a5-a472-dcd3279501e3', 'POST', '/api/Categories/Post', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('7125f39b-77b2-41bf-8b72-c81217b7ec70', 'POST', '/api/Texts/Post', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('441ffe07-78ea-4498-9898-e903fb3e638d', 'POST', '/api/Products/Post', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('b1aa7dba-2115-4299-a721-c0be68600a11', 'POST', '/api/Images/Post', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('0fc154d8-e741-4855-af56-50eb5086751d', 'POST', '/api/Brands/Post', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('4e9eb2b1-6051-4f0b-a742-7fc22cb4b15c', 'PUT', '/api/Categories/Put', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('865c4b3e-43ca-4330-850d-b6337e387b29', 'PUT', '/api/Products/Put', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('51a0817b-0c51-4c2c-aafe-006c6ed60b4a', 'PUT', '/api/Images/Put', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('e9373509-425b-469a-82eb-7291cf64e382', 'PUT', '/api/Texts/Put', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('94eefd07-2cdf-47ff-8d52-1834e09fcc31', 'PUT', '/api/Brands/Put', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('a11361cd-419b-4149-b8c8-0645ced23172', 'PUT', '/api/Brands/SoftDelete', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('ddd574ac-91d7-4ba1-b925-51383f5de53e', 'PUT', '/api/Categories/SoftDelete', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('c730fad7-65bd-40ae-b1e8-2607950876bc', 'PUT', '/api/Products/SoftDelete', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('fbee7bca-beb1-4e51-87d5-70da8e549cea', 'PUT', '/api/Images/SoftDelete', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('3c0ae841-9b8a-429d-9a8e-947925a85f9c', 'PUT', '/api/Texts/SoftDelete', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('5a44fa44-98bd-4c77-9566-7d89e339cbb4', 'DELETE', '/api/Brands/Delete', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('d96dba75-22b3-4543-acb0-d32ba0b79191', 'DELETE', '/api/Categories/Delete', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('5fcabe86-82da-41eb-9004-27577145bcff', 'DELETE', '/api/Images/Delete', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('abc9bb6a-b09f-47a1-89ec-efef70041b28', 'DELETE', '/api/Texts/Delete', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('9aafed68-2ff5-40a6-8a24-7f82f8301ae4', 'PUT', '/api/Products/SoftDeleteProductsWithImages', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('d4a7e1da-ad77-4bbe-8535-a9ed0157a2ef', 'POST', '/api/Products/CreateProductsWithImages', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('5ef5b257-a462-4352-b9c3-2c37b0bb6c59', 'GET', '/api/Brands/Get', '4be33d09-8b6a-427f-ac87-38bc752f4d9a', NULL);
-
-
---
 -- TOC entry 3361 (class 0 OID 16574)
 -- Dependencies: 215
 -- Data for Name: Microservices; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public."Microservices" ("Id", "Name", "FechaBaja") VALUES ('3fa85f64-5717-4562-b3fc-2c963f66afa6', 'Jwt', NULL);
-INSERT INTO public."Microservices" ("Id", "Name", "FechaBaja") VALUES ('4be33d09-8b6a-427f-ac87-38bc752f4d9a', 'ProductsMs', NULL);
+INSERT INTO public."Microservices" ("Id", "Name", "FechaBaja") VALUES ('1547d41e-59e2-4f4c-ace8-21c83181a162', 'Jwt', NULL);
 
 
 --
--- TOC entry 3365 (class 0 OID 16641)
--- Dependencies: 219
--- Data for Name: RoleMethod; Type: TABLE DATA; Schema: public; Owner: postgres
+-- TOC entry 3364 (class 0 OID 16595)
+-- Dependencies: 218
+-- Data for Name: Methods; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('19565a4d-9516-4ec5-b911-724a2f181bd8', '3fa85f64-5717-4562-b3fc-2c963f66afa6');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('3e17df33-587a-467b-a777-3936d18ee115', '3fa85f64-5717-4562-b3fc-2c963f66afa6');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('41058866-8a02-4ff4-91c9-c1c5c8bf9065', '3fa85f64-5717-4562-b3fc-2c963f66afa6');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('66db3ba3-009d-4db0-99b7-53b0dda49dfa', '3fa85f64-5717-4562-b3fc-2c963f66afa6');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('6f29b00c-5fe4-4952-9d03-a1d5b8d3ac86', '3fa85f64-5717-4562-b3fc-2c963f66afa6');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('80dea577-c5fe-4195-9676-62eb04a48bcc', '3fa85f64-5717-4562-b3fc-2c963f66afa6');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('959edc45-0522-4e89-a6ed-b88829bdd706', '3fa85f64-5717-4562-b3fc-2c963f66afa6');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('6f29b00c-5fe4-4952-9d03-a1d5b8d3ac86', 'e25c0146-9648-4b78-b8ec-813ebd24a5ee');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('0fc154d8-e741-4855-af56-50eb5086751d', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('3c0ae841-9b8a-429d-9a8e-947925a85f9c', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('441ffe07-78ea-4498-9898-e903fb3e638d', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('4e9eb2b1-6051-4f0b-a742-7fc22cb4b15c', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('51a0817b-0c51-4c2c-aafe-006c6ed60b4a', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('5a44fa44-98bd-4c77-9566-7d89e339cbb4', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('5fcabe86-82da-41eb-9004-27577145bcff', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('7125f39b-77b2-41bf-8b72-c81217b7ec70', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('865c4b3e-43ca-4330-850d-b6337e387b29', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('94eefd07-2cdf-47ff-8d52-1834e09fcc31', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('9aafed68-2ff5-40a6-8a24-7f82f8301ae4', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('a11361cd-419b-4149-b8c8-0645ced23172', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('abc9bb6a-b09f-47a1-89ec-efef70041b28', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('b1aa7dba-2115-4299-a721-c0be68600a11', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('c30a1c25-b3af-44a5-a472-dcd3279501e3', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('c730fad7-65bd-40ae-b1e8-2607950876bc', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('d4a7e1da-ad77-4bbe-8535-a9ed0157a2ef', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('d96dba75-22b3-4543-acb0-d32ba0b79191', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('ddd574ac-91d7-4ba1-b925-51383f5de53e', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('e9373509-425b-469a-82eb-7291cf64e382', '923586fa-21e1-419e-9414-b06998b0ba15');
-INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('fbee7bca-beb1-4e51-87d5-70da8e549cea', '923586fa-21e1-419e-9414-b06998b0ba15');
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('0f3342b9-0578-4ffc-8990-3d8ae30952b0', 'POST', '/api/Signup', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('3156fb8d-37c4-4772-ac8c-03934505b879', 'POST', '/api/Login/GetAllowedMethods', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('43f1da9b-1b85-498b-b189-d18367968369', 'GET', '/api/Method/GetByRole', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('49a2b842-5d4d-4ea3-974c-d19a7d0420cd', 'POST', '/api/Method', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('49b94ac7-c6f7-4573-8e7b-4e701091358c', 'GET', '/api/Microservice/GetAll', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('7904de77-ff78-4697-903f-d51e2891e52e', 'POST', '/api/Login', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('83029f4a-6f2a-4f22-a93b-30569e22a579', 'GET', '/api/Login/Enviroment', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('aca22726-eb8f-44e3-88c8-5fec44f70d04', 'POST', '/api/Roles', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('acdbd0de-3f5c-406f-a9cc-911ad0658fb9', 'GET', '/api/Method/GetByMicroservice', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('d6d08a83-3e88-4d4b-9c97-b023475e0ef9', 'POST', '/api/Microservice', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('e299bdc8-3e1e-4152-9601-83fa4852558f', 'POST', '/api/Signup/AssociateRole/{idUser}', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
 
 
 --
@@ -236,20 +180,26 @@ INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('fbee7bca-beb1-4e
 -- Data for Name: Roles; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public."Roles" ("Id", "Name", "FechaBaja") VALUES ('3fa85f64-5717-4562-b3fc-2c963f66afa6', 'AdminJwt', NULL);
-INSERT INTO public."Roles" ("Id", "Name", "FechaBaja") VALUES ('e25c0146-9648-4b78-b8ec-813ebd24a5ee', 'JwtUser', NULL);
-INSERT INTO public."Roles" ("Id", "Name", "FechaBaja") VALUES ('923586fa-21e1-419e-9414-b06998b0ba15', 'AdminProductMs', NULL);
+INSERT INTO public."Roles" ("Id", "Name", "FechaBaja") VALUES ('4eff5b74-b6d7-4384-9a6d-22985cf0ad8a', 'JwtMSAdmin', NULL);
 
 
 --
--- TOC entry 3366 (class 0 OID 16656)
--- Dependencies: 220
--- Data for Name: UserRole; Type: TABLE DATA; Schema: public; Owner: postgres
+-- TOC entry 3365 (class 0 OID 16641)
+-- Dependencies: 219
+-- Data for Name: RoleMethod; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public."UserRole" ("RoleId", "UserId") VALUES ('3fa85f64-5717-4562-b3fc-2c963f66afa6', '681c4f4f-fff1-4d00-af0f-8154d9065594');
-INSERT INTO public."UserRole" ("RoleId", "UserId") VALUES ('e25c0146-9648-4b78-b8ec-813ebd24a5ee', '291e6f4f-9dd9-491b-a3f9-e8f48692513a');
-INSERT INTO public."UserRole" ("RoleId", "UserId") VALUES ('923586fa-21e1-419e-9414-b06998b0ba15', '681c4f4f-fff1-4d00-af0f-8154d9065594');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('0f3342b9-0578-4ffc-8990-3d8ae30952b0', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('3156fb8d-37c4-4772-ac8c-03934505b879', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('43f1da9b-1b85-498b-b189-d18367968369', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('49a2b842-5d4d-4ea3-974c-d19a7d0420cd', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('49b94ac7-c6f7-4573-8e7b-4e701091358c', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('7904de77-ff78-4697-903f-d51e2891e52e', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('83029f4a-6f2a-4f22-a93b-30569e22a579', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('aca22726-eb8f-44e3-88c8-5fec44f70d04', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('acdbd0de-3f5c-406f-a9cc-911ad0658fb9', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('d6d08a83-3e88-4d4b-9c97-b023475e0ef9', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('e299bdc8-3e1e-4152-9601-83fa4852558f', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
 
 
 --
@@ -258,8 +208,17 @@ INSERT INTO public."UserRole" ("RoleId", "UserId") VALUES ('923586fa-21e1-419e-9
 -- Data for Name: Users; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
+INSERT INTO public."Users" ("Id", "Username", "Password", "Name", "Surname", "FechaBaja") VALUES ('8851442f-3048-4dd7-bc44-5f0d2b2853a3', 'desarrollo', 'desarrollo', 'desarrollo', 'desarrollo', NULL);
 INSERT INTO public."Users" ("Id", "Username", "Password", "Name", "Surname", "FechaBaja") VALUES ('681c4f4f-fff1-4d00-af0f-8154d9065594', 'josean', 'admin', 'josean', 'vilchez', NULL);
-INSERT INTO public."Users" ("Id", "Username", "Password", "Name", "Surname", "FechaBaja") VALUES ('291e6f4f-9dd9-491b-a3f9-e8f48692513a', 'user', '1234', 'Pepito', 'Perez', NULL);
+
+
+--
+-- TOC entry 3366 (class 0 OID 16656)
+-- Dependencies: 220
+-- Data for Name: UserRole; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public."UserRole" ("RoleId", "UserId") VALUES ('4eff5b74-b6d7-4384-9a6d-22985cf0ad8a', '681c4f4f-fff1-4d00-af0f-8154d9065594');
 
 
 --
@@ -270,6 +229,7 @@ INSERT INTO public."Users" ("Id", "Username", "Password", "Name", "Surname", "Fe
 
 INSERT INTO public."__EFMigrationsHistory" ("MigrationId", "ProductVersion") VALUES ('20231027180641_Username', '7.0.13');
 INSERT INTO public."__EFMigrationsHistory" ("MigrationId", "ProductVersion") VALUES ('20231029110320_manytomany', '7.0.13');
+
 
 
 --

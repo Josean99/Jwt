@@ -3,6 +3,9 @@ using DBContext;
 using Jwt.DTOs;
 using Jwt.Models;
 using Jwt.Services.Services.Interfaces;
+using Newtonsoft.Json.Linq;
+using System.Net.Http.Json;
+using System.Text.Json.Nodes;
 
 namespace Jwt.Services.Services.Implementations
 {
@@ -22,8 +25,9 @@ namespace Jwt.Services.Services.Implementations
         public async Task<MicroserviceResponseDto> Post(MicroserviceRequestDto dto)
         {
             Microservice entity = _mapper.Map<MicroserviceRequestDto, Microservice>(dto);
-
-            await _context.Microservices.AddAsync(entity);
+            var methodsToCreate = await CreateMethodsBasedOnSwaggerJson(JToken.Parse(dto.SwaggerContract));
+            entity.Methods = methodsToCreate;
+            await _context.Microservices.AddAsync(entity);            
             _context.Save();
 
             MicroserviceResponseDto result = _mapper.Map<Microservice, MicroserviceResponseDto>(entity);
@@ -46,6 +50,26 @@ namespace Jwt.Services.Services.Implementations
             
         }
 
+        private async Task<List<Method>> CreateMethodsBasedOnSwaggerJson(JToken json)
+        {
+            var result = new List<Method>();
+            JObject methods = JObject.Parse(json["paths"].ToString());
+            foreach (var m in methods)
+            {
+                var methodName = m.Key;
+                var methodData = JObject.Parse(m.Value.ToString()).GetEnumerator();
+                methodData.MoveNext();
+                var methodVerb = methodData.Current.Key;
+                methodData.Dispose();
+                Method method = new Method()
+                {
+                    Path = methodName,
+                    Verb = methodVerb.ToUpper(),
+                };
+                result.Add(method);
+            }
+            return result;
+        }
 
     }
 

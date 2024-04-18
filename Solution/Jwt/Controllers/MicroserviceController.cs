@@ -19,7 +19,7 @@ namespace Jwt.Controllers
 
         [HttpPost]
         public async Task<ActionResult<MicroserviceResponseDto>> Post(MicroserviceRequestDto dto)
-        {
+        {            
             var result = await _microserviceService.Post(dto);
 
             if (result != null)
