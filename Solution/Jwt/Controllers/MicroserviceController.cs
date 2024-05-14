@@ -27,7 +27,34 @@ namespace Jwt.Controllers
                 return Ok(result);
             }
 
-            return BadRequest("Error al insertar");
+            return BadRequest("Error Inserting");
+        }
+
+        [HttpPut]
+        public async Task<ActionResult<MicroserviceResponseDto>> Put(MicroserviceRequestDto dto)
+        {
+            var result = await _microserviceService.Put(dto);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest("Error Updating");
+        }
+
+        [HttpDelete]
+        [Route("SoftDelete/{id}")]
+        public async Task<ActionResult<bool>> SoftDelete(Guid id)
+        {
+            var result = await _microserviceService.SoftDelete(id);
+
+            if (result)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest("Error Updating");
         }
 
         [HttpGet("GetAll")]

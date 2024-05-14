@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./pages/header/header.component";
@@ -12,7 +13,7 @@ import { RolsComponent } from "./pages/rols/rols.component";
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, HeaderComponent, LandingComponent, MicroservicesComponent, UsersComponent, RolsComponent]
+    imports: [ RouterOutlet, HeaderComponent, LandingComponent, MicroservicesComponent, UsersComponent, RolsComponent]
 })
 export class AppComponent {
   title = 'Jwt_Frontend';

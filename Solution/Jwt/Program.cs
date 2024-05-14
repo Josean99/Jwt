@@ -41,6 +41,8 @@ builder.Services.RegisterAuthorization();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.RegisterSwagger();
 
+builder.Services.AddCors();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -59,5 +61,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors(x => x.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials());
 
 app.Run();

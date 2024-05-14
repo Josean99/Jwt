@@ -9,5 +9,7 @@ namespace Jwt.DTOs
         public Guid? Id { get; set; }
         public string Name { get; set; }
         public string? SwaggerContract { get; set; }
+        public List<MethodRequestDto>? Methods { get; set; }
     }
+
 }

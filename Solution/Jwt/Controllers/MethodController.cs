@@ -30,7 +30,7 @@ namespace Jwt.Controllers
             return BadRequest("Error al insertar");
         }
 
-        [HttpGet("GetByMicroservice")]
+        [HttpGet("GetByMicroservice/{idMicroservice}")]
         public async Task<ActionResult<List<MethodResponseDto>>> GetByMicroservice(Guid idMicroservice)
         {
             var result = await _methodService.GetByMicroservice(idMicroservice);
@@ -43,7 +43,7 @@ namespace Jwt.Controllers
             return BadRequest("Error");
         }
 
-        [HttpGet("GetByRole")]
+        [HttpGet("GetByRole/{idRole}")]
         public async Task<ActionResult<List<MethodRequestDto>>> GetByRole(Guid idRole)
         {
             var result = await _methodService.GetByRole(idRole);

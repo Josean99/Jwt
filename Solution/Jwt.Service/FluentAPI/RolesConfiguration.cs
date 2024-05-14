@@ -27,6 +27,8 @@ namespace DBContext.FluentAPI
                     j => j.HasOne<Method>().WithMany().HasForeignKey("MethodId"),
                     j => j.HasOne<Role>().WithMany().HasForeignKey("RoleId"));
 
+            builder.HasQueryFilter(m => !m.FechaBaja.HasValue);
+
             builder.Property(b => b.Name).IsRequired();
         }
     }
