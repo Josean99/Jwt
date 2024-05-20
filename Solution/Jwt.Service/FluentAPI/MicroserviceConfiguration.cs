@@ -16,6 +16,8 @@ namespace DBContext.FluentAPI
                 .WithOne(i => i.Microservice)
                 .HasForeignKey(i=>i.IdMicroservice);
 
+            builder.HasQueryFilter(m => !m.FechaBaja.HasValue);
+
             builder.Property(b => b.Name).IsRequired();
         }
     }

@@ -19,28 +19,13 @@ namespace Jwt.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<UserDto>> SignUp(SignUpDto signUpUser)
+        public async Task<ActionResult<UserRequestDto>> SignUp(SignUpDto signUpUser)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest("Error de Model State");
             }
             var result = await _userService.SignUpUser(signUpUser);
-            if (result != null)
-            {
-                return Ok(result);
-            }
-            return BadRequest("Error");
-        }
-
-        [HttpPost("AssociateRole/{idUser}")]
-        public async Task<ActionResult<UserDto>> AssociateRole(Guid idUser, [FromBody] List<Guid> roles)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest("Error de Model State");
-            }
-            var result = await _userService.AssociateRoles(idUser, roles);
             if (result != null)
             {
                 return Ok(result);

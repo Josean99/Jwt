@@ -10,18 +10,12 @@ using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//builder.Configuration.AddJsonFile($"appsettings.DockerStaging.json", optional: true, reloadOnChange: true);
+
 //REGISTER DBCONTEXT
 var cs = builder.Configuration.GetSection("ConnectionStrings").Get<ConnectionStringsMap>();
 
-var connectionString = "";
-if (builder.Environment.IsDevelopment())
-{
-    connectionString = cs.LocalHost;
-}
-else
-{
-    connectionString = cs.Docker;
-}
+var connectionString = cs!.jwtMS;
 
 builder.Services.AddDbContext<JwtContext>(options =>
     options.UseNpgsql(connectionString ?? throw new InvalidOperationException("Connection string 'DataContext' not found."))
@@ -37,24 +31,22 @@ builder.Logging.RegisterLogging(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(UserProfile));
 
 builder.Services.AddControllers().AddJsonOptions(x =>
-   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 builder.Services.AddHealthChecks();
 
 builder.Services.RegisterAuthentication();
+builder.Services.RegisterAuthorization();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.RegisterSwagger();
 
-//builder.WebHost.UseUrls("http://*:5025");
-
-builder.Services.RegisterAuthorization();
+builder.Services.AddCors();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.EnvironmentName == "DockerTest")
 {
     app.UseSwagger();
     app.UseSwaggerUI();
@@ -69,5 +61,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors(x => x.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader().AllowCredentials());
 
 app.Run();

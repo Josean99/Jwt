@@ -1,0 +1,16 @@
+<div class="container">
+    <div id="wordmark">
+        <img src="/assets/images/logo.png" alt="">
+        <h1>USER MANAGER JWT</h1>
+    </div>
+
+    <p-menubar [model]="items" class="">
+        <ng-template pTemplate="item" let-item class="">
+            <a class="menu-anchor" routerLink="{{item.routerLink}}">
+                <i class="menu-icon {{item.icon}}"></i>
+                <span class="menu-text">{{ item.label }}</span>
+            </a>
+        </ng-template>
+    </p-menubar>
+
+</div>

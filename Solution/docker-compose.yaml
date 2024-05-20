@@ -6,6 +6,8 @@ services:
         restart: always
         ports: 
             - "5001:80"
+        environment:
+            - ASPNETCORE_ENVIRONMENT=DockerStaging
         extra_hosts:
             - "host.docker.internal:host-gateway"
         depends_on:
@@ -15,6 +17,7 @@ services:
         image: postgres
         restart: always
         environment:
+          PGUSER: postgres
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: user
           POSTGRES_DB: JwtMS

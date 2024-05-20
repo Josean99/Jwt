@@ -17,6 +17,12 @@ namespace Jwt.Controllers
             _config = config;
         }
 
+        [HttpGet("Enviroment")]
+        public ActionResult<string> Enviroment()
+        {
+            return Ok(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT"));
+        }
+
         [HttpPost]
         public async Task<ActionResult<string>> Login(LoginUserDto userLogin)
         {

@@ -82,3 +82,5 @@ C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\bin\Release\net6.0\Jwt.DAL.dll
 C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\bin\Release\net6.0\Jwt.Services.dll
 C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\bin\Release\net6.0\Jwt.Services.pdb
 C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\bin\Release\net6.0\Jwt.DAL.pdb
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\bin\Release\net6.0\appsettings.DockerStaging.json
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\bin\Release\net6.0\appsettings.DockerTest.json

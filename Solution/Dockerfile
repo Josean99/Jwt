@@ -17,7 +17,7 @@ COPY ./../Jwt.DTOs/. ./Jwt.DTOs/
 COPY ./../Jwt.Entities/. ./Jwt.Entities/
 
 WORKDIR /app/Jwt
-RUN dotnet publish -c Release -o ./out
+RUN dotnet publish -o ./out
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
 WORKDIR /app
@@ -27,4 +27,4 @@ COPY --from=build /app/Jwt/out ./
 #EXPOSE 5036
 #EXPOSE 7036
 
-ENTRYPOINT ["dotnet", "Jwt.dll", "--launch-profile Docker"]
+ENTRYPOINT ["dotnet", "Jwt.dll"]

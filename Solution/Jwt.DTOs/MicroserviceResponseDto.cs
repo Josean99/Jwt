@@ -6,5 +6,6 @@ namespace Jwt.DTOs
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
+        public List<MethodResponseDto> Methods { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gN2wWD5a0A6uWrwpq8KCAkf8fHLED5odGsziaR8enpa2fxTZdrm/EV6MsHtG+5EzvcAt0dU6uuKyj9zz+Nsg6Q==",
+  "dgSpecHash": "vZQj1TYF8Pa8HR+eIj3IGIK4DNAlMN9Seva8/nSgu3qcSRjAYlPlTAikyWCJvs/mBUUZNKMmlw6kBLs47i/A7Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Josean\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Service\\Jwt.DAL.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\Josean\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
     "C:\\Users\\Josean\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Josean\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Josean\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Josean\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
     "C:\\Users\\Josean\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.11\\npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512",
     "C:\\Users\\Josean\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",

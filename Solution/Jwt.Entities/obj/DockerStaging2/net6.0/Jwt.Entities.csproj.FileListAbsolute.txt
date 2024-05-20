@@ -1,0 +1,11 @@
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.Entities\bin\DockerStaging2\net6.0\Jwt.Entities.deps.json
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.Entities\bin\DockerStaging2\net6.0\Jwt.Entities.dll
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.Entities\bin\DockerStaging2\net6.0\Jwt.Entities.pdb
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.Entities\obj\DockerStaging2\net6.0\Jwt.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.Entities\obj\DockerStaging2\net6.0\Jwt.Entities.AssemblyInfoInputs.cache
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.Entities\obj\DockerStaging2\net6.0\Jwt.Entities.AssemblyInfo.cs
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.Entities\obj\DockerStaging2\net6.0\Jwt.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.Entities\obj\DockerStaging2\net6.0\Jwt.Entities.dll
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.Entities\obj\DockerStaging2\net6.0\refint\Jwt.Entities.dll
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.Entities\obj\DockerStaging2\net6.0\Jwt.Entities.pdb
+C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.Entities\obj\DockerStaging2\net6.0\ref\Jwt.Entities.dll

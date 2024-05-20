@@ -27,6 +27,8 @@ namespace DBContext.FluentAPI
             builder.Property(b => b.Verb).IsRequired();
             builder.Property(b => b.Path).IsRequired();
             builder.Property(b => b.IdMicroservice).IsRequired();
+
+            builder.HasQueryFilter(m => !m.FechaBaja.HasValue);
         }
     }
 }

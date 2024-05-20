@@ -1,0 +1,76 @@
+[14:46:26 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:46:27 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[14:46:27 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[14:46:27 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[14:46:27 Microsoft.Hosting.Lifetime [Information] Hosting environment: "DockerTest"
+[14:46:27 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[14:46:29 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[14:46:29 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 133.2165ms
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 599.8823ms
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/swagger-ui.css - -
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/swagger-ui-bundle.js - -
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 6.7068ms
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/swagger-ui-standalone-preset.js - -
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[14:46:30 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] The file "/swagger-ui.css" was not modified
+[14:46:30 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] The file "/swagger-ui-bundle.js" was not modified
+[14:46:30 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] The file "/swagger-ui-standalone-preset.js" was not modified
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/swagger-ui.css - - - 304 - text/css 14.2111ms
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 12.1683ms
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 1.8653ms
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.0063ms
+[14:46:30 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[14:46:31 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 203.2457ms
+[14:47:27 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:47:28 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[14:47:28 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[14:47:28 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[14:47:28 Microsoft.Hosting.Lifetime [Information] Hosting environment: "DockerTest"
+[14:47:28 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[14:47:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[14:47:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[14:47:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 94.9933ms
+[14:47:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 357.0118ms
+[14:47:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[14:47:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[14:47:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 16.3078ms
+[14:47:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.7315ms
+[14:47:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[14:47:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 192.4300ms
+[14:51:32 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:51:32 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[14:51:32 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[14:51:32 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[14:51:32 Microsoft.Hosting.Lifetime [Information] Hosting environment: "DockerTest"
+[14:51:32 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[14:51:34 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[14:51:34 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[14:51:34 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 109.5021ms
+[14:51:35 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 640.4302ms
+[14:51:35 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[14:51:35 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 6.9526ms
+[14:51:35 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[14:51:35 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.0881ms
+[14:51:35 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - -
+[14:51:35 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[14:51:35 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - - - 0 628 image/png 32.3303ms
+[14:51:35 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[14:51:35 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 159.0181ms
+[14:53:44 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[14:53:44 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[14:53:44 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[14:53:44 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[14:53:44 Microsoft.Hosting.Lifetime [Information] Hosting environment: "DockerTest"
+[14:53:44 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[14:53:45 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[14:53:45 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[14:53:45 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 174.3260ms
+[14:53:46 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 476.4298ms
+[14:53:46 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[14:53:46 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[14:53:46 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 11.3291ms
+[14:53:46 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 69.8245ms
+[14:53:46 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[14:53:46 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 197.8490ms

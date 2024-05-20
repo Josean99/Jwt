@@ -1,0 +1,68 @@
+[19:16:56 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[19:17:23 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[19:17:24 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:5000"
+[19:17:24 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:5001"
+[19:17:24 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[19:17:24 Microsoft.Hosting.Lifetime [Information] Hosting environment: "Production"
+[19:17:24 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\bin\Debug\net6.0\"
+[19:17:36 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/1.1 POST https://localhost:5001/api/Login application/json 49
+[19:17:37 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[19:17:37 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.LoginController.Login (Jwt)"'
+[19:17:37 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Login(Jwt.Services.DTOs.LoginUserDto)" on controller "Jwt.Controllers.LoginController" ("Jwt").
+[19:17:38 Microsoft.EntityFrameworkCore.Database.Command [Information] Executed DbCommand ("63"ms) [Parameters=["@__ToLower_0='?', @__dto_Password_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"FechaBaja\", t.\"Name\", t.\"Password\", t.\"Surname\", t.\"Username\", t0.\"RoleId\", t0.\"UserId\", t0.\"Id\", t0.\"FechaBaja\", t0.\"Name\"
+FROM (
+    SELECT u.\"Id\", u.\"FechaBaja\", u.\"Name\", u.\"Password\", u.\"Surname\", u.\"Username\"
+    FROM \"Users\" AS u
+    WHERE lower(u.\"Name\") = @__ToLower_0 AND u.\"Password\" = @__dto_Password_1
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u0.\"RoleId\", u0.\"UserId\", r.\"Id\", r.\"FechaBaja\", r.\"Name\"
+    FROM \"UserRole\" AS u0
+    INNER JOIN \"Roles\" AS r ON u0.\"RoleId\" = r.\"Id\"
+) AS t0 ON t.\"Id\" = t0.\"UserId\"
+ORDER BY t.\"Id\", t0.\"RoleId\", t0.\"UserId\""
+[19:17:39 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "OkObjectResult", writing value of type '"System.String"'.
+[19:17:39 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.LoginController.Login (Jwt)" in 1844.5108ms
+[19:17:39 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.LoginController.Login (Jwt)"'
+[19:17:39 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/1.1 POST https://localhost:5001/api/Login application/json 49 - 200 - text/plain;+charset=utf-8 2203.5697ms
+[19:17:45 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/1.1 POST https://localhost:5001/api/Login application/json 58
+[19:17:45 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[19:17:45 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.LoginController.Login (Jwt)"'
+[19:17:45 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Login\", controller = \"Login\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Login(Jwt.Services.DTOs.LoginUserDto)" on controller "Jwt.Controllers.LoginController" ("Jwt").
+[19:17:45 Microsoft.EntityFrameworkCore.Database.Command [Information] Executed DbCommand ("3"ms) [Parameters=["@__ToLower_0='?', @__dto_Password_1='?'"], CommandType='Text', CommandTimeout='30']"
+""SELECT t.\"Id\", t.\"FechaBaja\", t.\"Name\", t.\"Password\", t.\"Surname\", t.\"Username\", t0.\"RoleId\", t0.\"UserId\", t0.\"Id\", t0.\"FechaBaja\", t0.\"Name\"
+FROM (
+    SELECT u.\"Id\", u.\"FechaBaja\", u.\"Name\", u.\"Password\", u.\"Surname\", u.\"Username\"
+    FROM \"Users\" AS u
+    WHERE lower(u.\"Name\") = @__ToLower_0 AND u.\"Password\" = @__dto_Password_1
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT u0.\"RoleId\", u0.\"UserId\", r.\"Id\", r.\"FechaBaja\", r.\"Name\"
+    FROM \"UserRole\" AS u0
+    INNER JOIN \"Roles\" AS r ON u0.\"RoleId\" = r.\"Id\"
+) AS t0 ON t.\"Id\" = t0.\"UserId\"
+ORDER BY t.\"Id\", t0.\"RoleId\", t0.\"UserId\""
+[19:17:45 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "OkObjectResult", writing value of type '"System.String"'.
+[19:17:45 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.LoginController.Login (Jwt)" in 9.1064ms
+[19:17:45 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.LoginController.Login (Jwt)"'
+[19:17:45 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/1.1 POST https://localhost:5001/api/Login application/json 58 - 200 - text/plain;+charset=utf-8 11.8165ms
+[19:18:19 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/1.1 GET https://localhost:5001/api/Login/Enviroment application/json -
+[19:18:19 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[19:18:19 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.LoginController.Enviroment (Jwt)"'
+[19:18:19 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Enviroment\", controller = \"Login\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] Enviroment()" on controller "Jwt.Controllers.LoginController" ("Jwt").
+[19:18:19 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "OkObjectResult", writing value of type '"null"'.
+[19:18:19 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.LoginController.Enviroment (Jwt)" in 0.7003ms
+[19:18:19 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.LoginController.Enviroment (Jwt)"'
+[19:18:19 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/1.1 GET https://localhost:5001/api/Login/Enviroment application/json - - 204 0 - 5.7061ms
+[19:18:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/1.1 GET https://localhost:5001/api/Login/Enviroment application/json -
+[19:18:33 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[19:18:33 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.LoginController.Enviroment (Jwt)"'
+[19:18:33 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Enviroment\", controller = \"Login\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] Enviroment()" on controller "Jwt.Controllers.LoginController" ("Jwt").
+[19:18:33 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "OkObjectResult", writing value of type '"null"'.
+[19:18:33 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.LoginController.Enviroment (Jwt)" in 0.1671ms
+[19:18:33 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.LoginController.Enviroment (Jwt)"'
+[19:18:33 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/1.1 GET https://localhost:5001/api/Login/Enviroment application/json - - 204 0 - 2.0895ms
+[19:18:42 Microsoft.Hosting.Lifetime [Information] Application is shutting down...

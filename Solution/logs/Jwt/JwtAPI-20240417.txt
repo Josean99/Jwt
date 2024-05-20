@@ -1,0 +1,251 @@
+[19:19:31 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[19:19:32 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[19:19:32 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[19:19:32 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[19:19:32 Microsoft.Hosting.Lifetime [Information] Hosting environment: "Development"
+[19:19:32 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[19:19:37 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[19:19:37 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 115.0509ms
+[19:19:37 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 464.4979ms
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 6.9064ms
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/swagger-ui.css - -
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/swagger-ui-bundle.js - -
+[19:19:38 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] The file "/swagger-ui.css" was not modified
+[19:19:38 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] The file "/swagger-ui-bundle.js" was not modified
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 5.1003ms
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/swagger-ui.css - - - 304 - text/css 19.1063ms
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/swagger-ui-standalone-preset.js - -
+[19:19:38 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] The file "/swagger-ui-standalone-preset.js" was not modified
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 8.6232ms
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 69.4849ms
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - -
+[19:19:38 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - - - 200 628 image/png 14.0136ms
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[19:19:38 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.4134ms
+[19:19:43 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/api/Login/Enviroment - -
+[19:19:47 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[19:19:47 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.LoginController.Enviroment (Jwt)"'
+[19:19:47 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Enviroment\", controller = \"Login\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] Enviroment()" on controller "Jwt.Controllers.LoginController" ("Jwt").
+[19:19:47 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "OkObjectResult", writing value of type '"System.String"'.
+[19:19:47 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.LoginController.Enviroment (Jwt)" in 8.8033ms
+[19:19:47 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.LoginController.Enviroment (Jwt)"'
+[19:19:47 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/api/Login/Enviroment - - - 200 - text/plain;+charset=utf-8 4388.7151ms
+[19:39:44 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[19:39:45 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[19:39:45 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[19:39:45 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[19:39:45 Microsoft.Hosting.Lifetime [Information] Hosting environment: "Development"
+[19:39:45 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[19:40:14 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[19:40:14 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[19:40:14 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[19:40:14 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[19:40:14 Microsoft.Hosting.Lifetime [Information] Hosting environment: "Development"
+[19:40:14 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[19:40:16 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[19:40:16 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[19:40:16 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 125.6906ms
+[19:40:16 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 438.1489ms
+[19:40:16 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[19:40:16 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 5.0095ms
+[19:40:16 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[19:40:16 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.8390ms
+[19:40:16 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - -
+[19:40:16 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[19:40:16 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - - - 0 628 image/png 22.9064ms
+[19:40:17 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[19:40:17 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 223.5377ms
+[19:41:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[19:41:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.8291ms
+[19:41:56 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[19:41:56 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.8252ms
+[20:06:11 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[20:06:12 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[20:06:12 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[20:06:12 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[20:06:12 Microsoft.Hosting.Lifetime [Information] Hosting environment: "Development"
+[20:06:12 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[20:06:13 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[20:06:13 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[20:06:13 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 165.2032ms
+[20:06:14 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 534.5288ms
+[20:06:14 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[20:06:14 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/swagger-ui.css - -
+[20:06:14 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[20:06:14 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 8.3975ms
+[20:06:14 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+[20:06:14 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/swagger-ui.css - - - 0 143632 text/css 26.4717ms
+[20:06:14 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.9293ms
+[20:06:14 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - -
+[20:06:14 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[20:06:14 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - - - 0 628 image/png 2.2109ms
+[20:06:14 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[20:06:14 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 200.3202ms
+[20:07:18 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 POST https://localhost:6036/api/Microservice application/json 18607
+[20:07:21 Microsoft.EntityFrameworkCore.Database.Command [Information] Executed DbCommand ("97"ms) [Parameters=["@__currentRoles_0='?' (DbType = Object)"], CommandType='Text', CommandTimeout='30']"
+""SELECT r.\"Id\", t.\"Id\", t.\"FechaBaja\", t.\"IdMicroservice\", t.\"Path\", t.\"Verb\", t.\"Id0\", t.\"FechaBaja0\", t.\"Name\", t.\"MethodId\", t.\"RoleId\"
+FROM \"Roles\" AS r
+LEFT JOIN (
+    SELECT m.\"Id\", m.\"FechaBaja\", m.\"IdMicroservice\", m.\"Path\", m.\"Verb\", m0.\"Id\" AS \"Id0\", m0.\"FechaBaja\" AS \"FechaBaja0\", m0.\"Name\", r0.\"MethodId\", r0.\"RoleId\"
+    FROM \"RoleMethod\" AS r0
+    INNER JOIN \"Methods\" AS m ON r0.\"MethodId\" = m.\"Id\"
+    INNER JOIN \"Microservices\" AS m0 ON m.\"IdMicroservice\" = m0.\"Id\"
+) AS t ON r.\"Id\" = t.\"RoleId\"
+WHERE r.\"Id\" = ANY (@__currentRoles_0)
+ORDER BY r.\"Id\", t.\"MethodId\", t.\"RoleId\", t.\"Id\""
+[20:07:34 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:07:34 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Post\", controller = \"Microservice\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Jwt.DTOs.MicroserviceResponseDto]] Post(Jwt.DTOs.MicroserviceRequestDto)" on controller "Jwt.Controllers.MicroserviceController" ("Jwt").
+[20:07:34 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+[20:07:34 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.MicroserviceController.Post (Jwt)" in 115.3944ms
+[20:07:34 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:07:34 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 POST https://localhost:6036/api/Microservice application/json 18607 - 400 - application/problem+json;+charset=utf-8 15651.8303ms
+[20:09:02 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[20:09:03 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[20:09:03 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[20:09:03 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[20:09:03 Microsoft.Hosting.Lifetime [Information] Hosting environment: "Development"
+[20:09:03 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[20:09:04 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[20:09:04 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[20:09:04 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 113.9105ms
+[20:09:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 459.0102ms
+[20:09:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[20:09:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/swagger-ui.css - -
+[20:09:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[20:09:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 12.1302ms
+[20:09:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.0079ms
+[20:09:05 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+[20:09:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/swagger-ui.css - - - 0 143632 text/css 26.7053ms
+[20:09:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - -
+[20:09:05 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[20:09:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - - - 0 628 image/png 1.5110ms
+[20:09:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[20:09:05 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 213.9297ms
+[20:09:26 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 POST https://localhost:6036/api/Microservice application/json 18702
+[20:09:27 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[20:09:27 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:09:27 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Post\", controller = \"Microservice\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Jwt.DTOs.MicroserviceResponseDto]] Post(Jwt.DTOs.MicroserviceRequestDto)" on controller "Jwt.Controllers.MicroserviceController" ("Jwt").
+[20:09:27 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+[20:09:27 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.MicroserviceController.Post (Jwt)" in 104.2555ms
+[20:09:27 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:09:27 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 POST https://localhost:6036/api/Microservice application/json 18702 - 400 - application/problem+json;+charset=utf-8 590.2644ms
+[20:10:06 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 POST https://localhost:6036/api/Microservice application/json 97
+[20:10:06 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[20:10:06 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:10:06 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Post\", controller = \"Microservice\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Jwt.DTOs.MicroserviceResponseDto]] Post(Jwt.DTOs.MicroserviceRequestDto)" on controller "Jwt.Controllers.MicroserviceController" ("Jwt").
+[20:10:19 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.MicroserviceController.Post (Jwt)" in 12156.8404ms
+[20:10:19 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:10:19 Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware [Error] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Jwt.Services.Services.Implementations.MicroserviceService.CreateMethodsBasedOnSwaggerJson(JObject json) in C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.DAL\Services\Implementations\MicroserviceService.cs:line 54
+   at Jwt.Services.Services.Implementations.MicroserviceService.Post(MicroserviceRequestDto dto) in C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.DAL\Services\Implementations\MicroserviceService.cs:line 28
+   at Jwt.Controllers.MicroserviceController.Post(MicroserviceRequestDto dto) in C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\Controllers\MicroserviceController.cs:line 23
+   at lambda_method9(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[20:10:19 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 POST https://localhost:6036/api/Microservice application/json 97 - 500 - text/plain;+charset=utf-8 12308.2305ms
+[20:10:21 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 POST https://localhost:6036/api/Microservice application/json 97
+[20:10:21 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[20:10:21 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:10:21 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Post\", controller = \"Microservice\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Jwt.DTOs.MicroserviceResponseDto]] Post(Jwt.DTOs.MicroserviceRequestDto)" on controller "Jwt.Controllers.MicroserviceController" ("Jwt").
+[20:10:29 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[20:10:29 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[20:10:29 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[20:10:29 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[20:10:29 Microsoft.Hosting.Lifetime [Information] Hosting environment: "Development"
+[20:10:29 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[20:10:31 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[20:10:31 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 113.2817ms
+[20:10:31 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[20:10:32 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 396.8944ms
+[20:10:32 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[20:10:32 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[20:10:32 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 8.2808ms
+[20:10:32 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.7664ms
+[20:10:32 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[20:10:32 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 151.5440ms
+[20:10:56 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 POST https://localhost:6036/api/Microservice application/json 18611
+[20:10:56 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[20:10:56 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:10:56 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Post\", controller = \"Microservice\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Jwt.DTOs.MicroserviceResponseDto]] Post(Jwt.DTOs.MicroserviceRequestDto)" on controller "Jwt.Controllers.MicroserviceController" ("Jwt").
+[20:10:56 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+[20:10:57 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.MicroserviceController.Post (Jwt)" in 103.0856ms
+[20:10:57 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:10:57 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 POST https://localhost:6036/api/Microservice application/json 18611 - 400 - application/problem+json;+charset=utf-8 596.5824ms
+[20:12:01 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 POST https://localhost:6036/api/Microservice application/json 9745
+[20:12:02 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[20:12:02 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:12:02 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Post\", controller = \"Microservice\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Jwt.DTOs.MicroserviceResponseDto]] Post(Jwt.DTOs.MicroserviceRequestDto)" on controller "Jwt.Controllers.MicroserviceController" ("Jwt").
+[20:12:02 Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor [Information] Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+[20:12:02 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Executed action "Jwt.Controllers.MicroserviceController.Post (Jwt)" in 5.8101ms
+[20:12:02 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executed endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:12:02 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 POST https://localhost:6036/api/Microservice application/json 9745 - 400 - application/problem+json;+charset=utf-8 143.3857ms
+[20:12:55 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 POST https://localhost:6036/api/Microservice application/json 9745
+[20:12:55 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[20:12:55 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:12:55 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Post\", controller = \"Microservice\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Jwt.DTOs.MicroserviceResponseDto]] Post(Jwt.DTOs.MicroserviceRequestDto)" on controller "Jwt.Controllers.MicroserviceController" ("Jwt").
+[20:14:39 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[20:14:39 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[20:14:39 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[20:14:39 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[20:14:39 Microsoft.Hosting.Lifetime [Information] Hosting environment: "Development"
+[20:14:39 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[20:14:41 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[20:14:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 154.8403ms
+[20:14:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[20:14:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 415.2523ms
+[20:14:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[20:14:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 4.7396ms
+[20:14:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[20:14:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.5771ms
+[20:14:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - -
+[20:14:42 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"'
+[20:14:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/favicon-32x32.png - - - 0 628 image/png 32.9843ms
+[20:14:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[20:14:42 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 202.0318ms
+[20:14:51 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 POST https://localhost:6036/api/Microservice application/json 9745
+[20:14:51 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[20:14:51 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:14:51 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Post\", controller = \"Microservice\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Jwt.DTOs.MicroserviceResponseDto]] Post(Jwt.DTOs.MicroserviceRequestDto)" on controller "Jwt.Controllers.MicroserviceController" ("Jwt").
+[20:18:20 Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager [Information] User profile is available. Using '"C:\Users\Josean\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+[20:18:20 Microsoft.Hosting.Lifetime [Information] Now listening on: "https://localhost:6036"
+[20:18:20 Microsoft.Hosting.Lifetime [Information] Now listening on: "http://localhost:4036"
+[20:18:20 Microsoft.Hosting.Lifetime [Information] Application started. Press Ctrl+C to shut down.
+[20:18:20 Microsoft.Hosting.Lifetime [Information] Hosting environment: "Development"
+[20:18:20 Microsoft.Hosting.Lifetime [Information] Content root path: "C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt\"
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger - -
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/index.html - -
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger - - - 0 - - 103.2200ms
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/index.html - - - 200 - text/html;charset=utf-8 447.2633ms
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - -
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/swagger-ui.css - -
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/_vs/browserLink - -
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_framework/aspnetcore-browser-refresh.js - - - 200 12338 application/javascript;+charset=utf-8 50.7106ms
+[20:18:22 Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware [Information] Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"'
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/swagger-ui.css - - - 0 143632 text/css 66.8886ms
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.8145ms
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - -
+[20:18:22 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request finished HTTP/2 GET https://localhost:6036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.1644ms
+[20:18:28 Microsoft.AspNetCore.Hosting.Diagnostics [Information] Request starting HTTP/2 POST https://localhost:6036/api/Microservice application/json 9745
+[20:18:29 Jwt.Services.Utils.JwtAuthenticationHandler [Information] "Bearer" was not authenticated. Failure message: "Authentication failed: The format of value '<null>' is invalid."
+[20:18:29 Microsoft.AspNetCore.Routing.EndpointMiddleware [Information] Executing endpoint '"Jwt.Controllers.MicroserviceController.Post (Jwt)"'
+[20:18:29 Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker [Information] Route matched with "{action = \"Post\", controller = \"Microservice\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Jwt.DTOs.MicroserviceResponseDto]] Post(Jwt.DTOs.MicroserviceRequestDto)" on controller "Jwt.Controllers.MicroserviceController" ("Jwt").

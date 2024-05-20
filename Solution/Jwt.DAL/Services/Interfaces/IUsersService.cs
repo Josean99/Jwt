@@ -5,10 +5,15 @@ namespace Jwt.Services.Services.Interfaces
 {
     public interface IUsersService
     {
-        Task<UserDto> Get(Guid id);
+        Task<UserResponseDto> Get(Guid id);
+        Task<List<UserResponseDto>> GetAll();
         Task<List<string>> GetAllowedMethods(GetAllowedMethodsDto dto);
+        Task<UserResponseDto> Post(UserRequestDto dto);
+        Task<UserResponseDto> Put(UserRequestDto dto);
+        Task<bool> SoftDelete(Guid id);
+        Task<bool> ResetPassword(Guid idUser);
         Task<string?> LogInUser(LoginUserDto dto);
-        Task<UserDto> SignUpUser(SignUpDto dto);
-        Task<UserDto> AssociateRoles(Guid idUser, List<Guid> roles);
+        Task<UserResponseDto> SignUpUser(SignUpDto dto);
+        Task<UserResponseDto> AssociateRoles(Guid idUser, List<Guid> roles);
     }
 }

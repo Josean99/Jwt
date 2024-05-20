@@ -24,6 +24,12 @@ namespace Jwt.Services.Utils
         }
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, AccessRequirement requirement)
         {
+            var enviroment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            if (enviroment.Equals("Development"))
+            {
+                context.Succeed(requirement);
+                return Task.CompletedTask;
+            }
             Claim? methodClaim = context.User.Claims.FirstOrDefault(c => c.Type == "AllowedMethods");
             if (methodClaim == null)
             {

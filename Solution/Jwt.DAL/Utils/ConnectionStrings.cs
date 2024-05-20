@@ -8,7 +8,6 @@ namespace Jwt.Services.Utils
 {
     public class ConnectionStringsMap
     {
-        public string LocalHost { get; set; }
-        public string Docker { get; set; }
+        public string jwtMS { get; set; }
     }
 }

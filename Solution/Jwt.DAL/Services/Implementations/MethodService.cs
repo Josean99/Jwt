@@ -34,14 +34,14 @@ namespace Jwt.Services.Services.Implementations
 
         public async Task<List<MethodResponseDto>> GetByMicroservice(Guid id)
         {
-            var result = _context.Methods.Where(m=>m.IdMicroservice == id).ToList();
+            var result = _context.Methods.Include(m=>m.Microservice).Where(m=>m.IdMicroservice == id).ToList();
             List<MethodResponseDto> resultDto = _mapper.Map<List<Method>, List<MethodResponseDto>>(result);
             return resultDto;
         }
 
         public async Task<List<MethodResponseDto>> GetByRole(Guid id)
         {
-            var result = _context.Roles.Include(r=>r.Methods).First(r=>r.Id == id);
+            var result = _context.Roles.Include(r=>r.Methods).ThenInclude(m=>m.Microservice).First(r=>r.Id == id);
             List<MethodResponseDto> resultDto = _mapper.Map<List<Method>, List<MethodResponseDto>>(result.Methods.ToList());
             return resultDto;
         }

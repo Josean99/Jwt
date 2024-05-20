@@ -617,6 +617,9 @@
         }
       },
       "JwtDTOs/1.0.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.3"
+        },
         "runtime": {
           "Jwt.DTOs.dll": {}
         }

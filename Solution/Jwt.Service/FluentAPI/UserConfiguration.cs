@@ -19,6 +19,8 @@ namespace DBContext.FluentAPI
                     j => j.HasOne<Role>().WithMany().HasForeignKey("RoleId"),
                     j => j.HasOne<User>().WithMany().HasForeignKey("UserId"));
 
+            builder.HasQueryFilter(m => !m.FechaBaja.HasValue);
+
             builder.Property(b => b.Password).IsRequired();
             builder.Property(b => b.Name).IsRequired();
             builder.Property(b => b.Surname).IsRequired();
