@@ -48,7 +48,7 @@ namespace Jwt.Services.Services.Implementations
             Role? entity = await _context.Roles.Include(m => m.Methods).FirstOrDefaultAsync(m => m.Id == dto.Id);
             if (entity is null) { throw new Exception("Role not found"); }
 
-            List<Method> methods = entity.Methods.Where(p => dto.Methods.Contains(p.Id)).ToList();
+            List<Method> methods = _context.Methods.Where(p => dto.Methods.Contains(p.Id)).ToList();
             //List<Method> methodsDisasociate = entity.Methods.Where(p => !methods.Any(p2 => p2.Id == p.Id)).ToList();
             //if (methodsDisasociate.Any())
             //{
@@ -92,6 +92,13 @@ namespace Jwt.Services.Services.Implementations
                 throw;
             }
 
+        }
+
+        public async Task<List<RoleResonseDto>> GetUserRoles(Guid idUser)
+        {
+            var result = _context.Users.Include(r => r.Roles).First(r => r.Id == idUser);
+            List<RoleResonseDto> resultDto = _mapper.Map<List<Role>, List<RoleResonseDto>>(result.Roles.ToList());
+            return resultDto;
         }
     }
 

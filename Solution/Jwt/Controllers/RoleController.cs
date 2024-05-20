@@ -72,5 +72,18 @@ namespace Jwt.Controllers
 
             return BadRequest("Error");
         }
+
+        [HttpGet("GetUserRoles/{idUser}")]
+        public async Task<ActionResult<List<RoleResonseDto>>> GetUserRoles(Guid idUser)
+        {
+            var result = await _rolesService.GetUserRoles(idUser);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+
+            return BadRequest("Error");
+        }
     }
 }

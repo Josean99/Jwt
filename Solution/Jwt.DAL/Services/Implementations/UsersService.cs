@@ -29,15 +29,25 @@ namespace Jwt.Services.Services.Implementations
 
 
 
-        public async Task<UserDto> Get(Guid id)
+        public async Task<UserResponseDto> Get(Guid id)
         {
             User? user = await _context.Users
                 .Include(u => u.Roles)
                 .FirstAsync(u => u.Id == id);
 
-            if (user == null) { throw new Exception("Usuario no encontrado"); }
+            if (user == null) { throw new Exception("User not found"); }
 
-            UserDto userDto = _mapper.Map<User,UserDto>(user);
+            UserResponseDto userDto = _mapper.Map<User, UserResponseDto>(user);
+            return userDto;
+        }
+
+        public async Task<List<UserResponseDto>> GetAll()
+        {
+            List<User>? user = _context.Users.ToList();
+
+            if (user == null) { throw new Exception("Users not found"); }
+
+            List<UserResponseDto> userDto = _mapper.Map<List<User>, List<UserResponseDto>>(user);
             return userDto;
         }
 
@@ -61,6 +71,79 @@ namespace Jwt.Services.Services.Implementations
             return methods;
         }
 
+        public async Task<UserResponseDto> Post(UserRequestDto dto)
+        {
+            try
+            {
+                User entity = _mapper.Map<UserRequestDto, User>(dto);
+                entity.Password = GeneratePassword();
+                entity.Roles = _context.Roles.Where(me => dto.Roles.Select(m => m).Contains(me.Id)).ToList();
+                await _context.Users.AddAsync(entity);
+                _context.Save();
+
+                UserResponseDto result = _mapper.Map<User, UserResponseDto>(entity);
+
+                return result;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+
+        public async Task<UserResponseDto> Put(UserRequestDto dto)
+        {
+            User? entity = await _context.Users.Include(m => m.Roles).FirstOrDefaultAsync(m => m.Id == dto.Id);
+            if (entity is null) { throw new Exception("User not found"); }
+
+            List<Role> roles = _context.Roles.Where(p => dto.Roles.Contains(p.Id)).ToList();
+
+            entity.Roles = roles;
+            entity.Name = dto.Username;
+            entity.Name = dto.Name;
+            entity.Name = dto.Surname;
+
+            _context.Users.Update(entity);
+            _context.Save();
+
+            UserResponseDto result = _mapper.Map<User, UserResponseDto>(entity);
+
+            return result;
+        }
+
+        public async Task<bool> SoftDelete(Guid id)
+        {
+            User? entity = await _context.Users.FirstOrDefaultAsync(m => m.Id == id);
+            if (entity is null) { throw new Exception("User not found"); }
+
+            entity.FechaBaja = DateTime.Now;
+
+            _context.Users.Update(entity);
+            _context.Save();
+
+            return true;
+        }
+
+        public async Task<bool> ResetPassword(Guid idUser)
+        {
+            User? entity = await _context.Users.FirstOrDefaultAsync(m => m.Id == idUser);
+            if (entity is null) { throw new Exception("User not found"); }
+
+            entity.Password = GeneratePassword().ToString();
+
+            _context.Users.Update(entity);
+            _context.Save();
+
+            return true;
+        }
+
+        private static string GeneratePassword()
+        {
+            return Guid.NewGuid().ToString();
+        }
+
         public async Task<string?> LogInUser(LoginUserDto dto)
         {
             try
@@ -81,14 +164,14 @@ namespace Jwt.Services.Services.Implementations
             }
         }
 
-        public async Task<UserDto> SignUpUser(SignUpDto dto)
+        public async Task<UserResponseDto> SignUpUser(SignUpDto dto)
         {
             try
             {
                 User newUser = _mapper.Map<SignUpDto,User>(dto);
                 await _context.Users.AddAsync(newUser);
                 _context.Save();
-                UserDto userCreated = _mapper.Map<User, UserDto>(newUser);
+                UserResponseDto userCreated = _mapper.Map<User, UserResponseDto>(newUser);
                 return userCreated;
             }
             catch (Exception)
@@ -97,7 +180,7 @@ namespace Jwt.Services.Services.Implementations
             }
         }
 
-        public async Task<UserDto> AssociateRoles(Guid idUser, List<Guid> roles)
+        public async Task<UserResponseDto> AssociateRoles(Guid idUser, List<Guid> roles)
         {
             try
             {
@@ -112,7 +195,7 @@ namespace Jwt.Services.Services.Implementations
                 _context.Users.Update(user);
                 _context.Save();
 
-                UserDto userCreated = _mapper.Map<User, UserDto>(user);
+                UserResponseDto userCreated = _mapper.Map<User, UserResponseDto>(user);
                 return userCreated;
             }
             catch (Exception)

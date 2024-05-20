@@ -20,7 +20,7 @@ export class HeaderComponent {
                 routerLink: 'users'           
             },
             {
-                label: 'Rols',
+                label: 'Roles',
                 icon: 'fa-solid fa-address-card',    
                 routerLink: 'rols'             
             },

@@ -44,13 +44,21 @@ export interface IApiRoleRequestDto{
 /* #endregion Rols */
 
 /* #region Users */
-export interface IApiUserDto{
+export interface IApiUserRequestDto{
+    id : string, //Uuid
+    username : string
+    name : string
+    surname : string
+    roles: string[]
+}
+
+export interface IApiUserResponseDto{
     id : string, //Uuid
     username : string
     password : string
     name : string
     surname : string
-    roles: string[]
+    roles: IApiRoleResponseDto[]
 }
 
 export interface IApiLoginUserDto{

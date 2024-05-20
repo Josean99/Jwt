@@ -44,7 +44,7 @@ namespace Jwt.Controllers
         }
 
         [HttpGet("GetByRole/{idRole}")]
-        public async Task<ActionResult<List<MethodRequestDto>>> GetByRole(Guid idRole)
+        public async Task<ActionResult<List<MethodResponseDto>>> GetByRole(Guid idRole)
         {
             var result = await _methodService.GetByRole(idRole);
 

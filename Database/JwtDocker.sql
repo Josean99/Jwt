@@ -177,6 +177,12 @@ INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja
 INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('1facd9e6-8b67-408c-8abe-fdd2fbfbfdad', 'DELETE', '/api/Role/SoftDelete', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
 INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('6890954e-3eee-4ed6-a654-027ad6339b51', 'PUT', '/api/Role/Put', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
 INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('1dd58b6b-7482-4b5d-a4b2-43db564476fd', 'GET', '/api/Role/GetAll', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('640247d2-854c-44fa-9c0e-c7a29ab56c7c', 'GET', '/api/User/GetAll', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('3cd06587-9940-4b21-8328-949782a64591', 'GET', '/api/Role/GetUserRoles', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('a7891f55-cb52-491a-b07a-a891685b5e46', 'POST', '/api/User/Post', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('082a520e-c78d-47b2-bd12-24fe087cf3c9', 'PUT', '/api/User/Put', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('6cc68ab5-2b65-40ee-b279-b5a43d371e3d', 'PUT', '/api/User/ResetPassword', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('d700c25c-76aa-482a-8397-c53800e9cb1c', 'DELETE', '/api/User/SoftDelete', '1547d41e-59e2-4f4c-ace8-21c83181a162', NULL);
 
 
 --
@@ -210,6 +216,41 @@ INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('7053551f-6d66-46
 INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('1facd9e6-8b67-408c-8abe-fdd2fbfbfdad', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
 INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('6890954e-3eee-4ed6-a654-027ad6339b51', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
 INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('1dd58b6b-7482-4b5d-a4b2-43db564476fd', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('640247d2-854c-44fa-9c0e-c7a29ab56c7c', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('3cd06587-9940-4b21-8328-949782a64591', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('a7891f55-cb52-491a-b07a-a891685b5e46', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('082a520e-c78d-47b2-bd12-24fe087cf3c9', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('6cc68ab5-2b65-40ee-b279-b5a43d371e3d', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('d700c25c-76aa-482a-8397-c53800e9cb1c', '4eff5b74-b6d7-4384-9a6d-22985cf0ad8a');
+
+-- Inserciones adicionales para la tabla Microservices
+INSERT INTO public."Microservices" ("Id", "Name", "FechaBaja") VALUES ('e623b537-f3a2-4e45-917e-9a8b9a276abc', 'AuthService', NULL);
+INSERT INTO public."Microservices" ("Id", "Name", "FechaBaja") VALUES ('4a92f418-7d3f-4e8a-bd50-824cc4798d74', 'PaymentService', NULL);
+
+-- Inserciones adicionales para la tabla Methods
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('00112233-4455-6677-8899-aabbccddeeff', 'GET', '/api/Auth/GetToken', 'e623b537-f3a2-4e45-917e-9a8b9a276abc', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('11223344-5566-7788-99aa-bbccddeeff00', 'POST', '/api/Auth/ValidateToken', 'e623b537-f3a2-4e45-917e-9a8b9a276abc', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('22334455-6677-8899-aabb-ccddeeff0011', 'POST', '/api/Payment/Process', '4a92f418-7d3f-4e8a-bd50-824cc4798d74', NULL);
+INSERT INTO public."Methods" ("Id", "Verb", "Path", "IdMicroservice", "FechaBaja") VALUES ('33445566-7788-99aa-bbcc-ddeeff002233', 'GET', '/api/Payment/GetStatus', '4a92f418-7d3f-4e8a-bd50-824cc4798d74', NULL);
+
+-- Inserciones adicionales para la tabla Roles
+INSERT INTO public."Roles" ("Id", "Name", "FechaBaja") VALUES ('77b8a6b7-8d2b-411d-8e4c-aedf12345678', 'PaymentAdmin', NULL);
+INSERT INTO public."Roles" ("Id", "Name", "FechaBaja") VALUES ('88c9b7c8-9e3f-522e-9f5d-beed23456789', 'AuthAdmin', NULL);
+
+-- Inserciones adicionales para la tabla Users
+INSERT INTO public."Users" ("Id", "Username", "Password", "Name", "Surname", "FechaBaja") VALUES ('992d4c2d-6a3f-4a8c-8e6d-dee212345678', 'payment_user', 'securepassword1', 'John', 'Doe', NULL);
+INSERT INTO public."Users" ("Id", "Username", "Password", "Name", "Surname", "FechaBaja") VALUES ('aabb3d4e-7b4e-5b7f-9d6e-ffee34567890', 'auth_user', 'securepassword2', 'Jane', 'Smith', NULL);
+
+-- Inserciones adicionales para la tabla RoleMethod
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('00112233-4455-6677-8899-aabbccddeeff', '88c9b7c8-9e3f-522e-9f5d-beed23456789');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('11223344-5566-7788-99aa-bbccddeeff00', '88c9b7c8-9e3f-522e-9f5d-beed23456789');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('22334455-6677-8899-aabb-ccddeeff0011', '77b8a6b7-8d2b-411d-8e4c-aedf12345678');
+INSERT INTO public."RoleMethod" ("MethodId", "RoleId") VALUES ('33445566-7788-99aa-bbcc-ddeeff002233', '77b8a6b7-8d2b-411d-8e4c-aedf12345678');
+
+-- Inserciones adicionales para la tabla UserRole
+INSERT INTO public."UserRole" ("RoleId", "UserId") VALUES ('77b8a6b7-8d2b-411d-8e4c-aedf12345678', '992d4c2d-6a3f-4a8c-8e6d-dee212345678');
+INSERT INTO public."UserRole" ("RoleId", "UserId") VALUES ('88c9b7c8-9e3f-522e-9f5d-beed23456789', 'aabb3d4e-7b4e-5b7f-9d6e-ffee34567890');
+
 
 
 --

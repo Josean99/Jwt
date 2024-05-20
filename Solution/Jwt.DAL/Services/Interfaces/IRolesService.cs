@@ -8,5 +8,6 @@ namespace Jwt.Services.Services.Interfaces
         Task<RoleResonseDto> Put(RoleRequestDto dto);
         Task<bool> SoftDelete(Guid id);
         Task<List<RoleResonseDto>> GetAll();
+        Task<List<RoleResonseDto>> GetUserRoles(Guid idUser);
     }
 }

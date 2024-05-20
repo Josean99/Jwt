@@ -25,7 +25,7 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
   styleUrl: './rols.component.scss'
 })
 export class RolsComponent implements OnInit{
-private readonly jwtService = inject(JwtApiService);
+  private readonly jwtService = inject(JwtApiService);
   private readonly messageService = inject(MessageService);
   private readonly confirmationService = inject(ConfirmationService);
   private readonly renderer = inject(Renderer2);

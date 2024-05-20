@@ -9,14 +9,14 @@ namespace Jwt.Services.Mappers
     {
         public UserProfile()
         {
-            CreateMap<User, UserDto>()
+            CreateMap<UserRequestDto, User>()
                 .ForMember(
                     dest => dest.Roles,
-                    opt => opt.MapFrom(src => src.Roles.Select(r=>r.Id))
-                )
-                .ReverseMap();
+                    opt => opt.Ignore());
 
+            CreateMap<User, UserResponseDto>();
             CreateMap<SignUpDto, User>();
+
         }
     }
 }
