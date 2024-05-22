@@ -8,7 +8,7 @@ import { IApiMethodResponseDto, IApiMicroserviceRequestDto, IApiMicroserviceResp
 })
 export class JwtApiService {
   private readonly _httpCLient = inject(HttpClient);
-  private readonly baseUrl = "https://localhost:6036";
+  private readonly baseUrl = "https://localhost:5001";
 
   constructor() { }
 

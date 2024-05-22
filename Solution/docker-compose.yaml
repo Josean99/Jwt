@@ -30,9 +30,11 @@ services:
             interval: 1s
             timeout: 5s
             retries: 5
-
-    adminer:
-      image: adminer
-      restart: always
-      ports:
-        - 8080:8080
+    
+    angular-app:
+        build: ./Jwt_Frontend/
+        container_name: angular-app
+        ports:
+            - '5200:4200'
+        environment:
+            - STYLE=css
