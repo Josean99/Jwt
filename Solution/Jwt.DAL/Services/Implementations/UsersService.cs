@@ -53,7 +53,7 @@ namespace Jwt.Services.Services.Implementations
 
         public async Task<List<string>> GetAllowedMethods(GetAllowedMethodsDto dto)
         {
-            List<Guid> currentRoles = ReadToken(dto.token);
+            List<Guid> currentRoles = ReadToken(dto.token); 
 
             IQueryable<Role> roles = _context.Roles
                 .Include(u => u.Methods)
