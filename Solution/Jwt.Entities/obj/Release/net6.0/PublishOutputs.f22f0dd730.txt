@@ -1,3 +1,0 @@
-C:\out\Jwt.Entities.dll
-C:\out\Jwt.Entities.deps.json
-C:\out\Jwt.Entities.pdb
