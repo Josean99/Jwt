@@ -2,3 +2,17 @@
 /Frontend/jwt/node_modules
 /Solution/Jwt_Frontend/.angular
 /Solution/Jwt_Frontend/node_modules
+
+/Solution/.vs
+/Solution/logs
+/Solution/Jwt.Service/bin
+/Solution/Jwt.Service/obj
+/Solution/Jwt.DAL/bin
+/Solution/Jwt.DAL/obj
+/Solution/Jwt.DTOs/bin
+/Solution/Jwt.DTOs/obj
+/Solution/Jwt.Entities/bin
+/Solution/Jwt.Entities/obj
+/Solution/Jwt/bin
+/Solution/Jwt/obj
+

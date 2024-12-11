@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "uzNpxcQ/Tm0o0A7cpvxWpP2v10+h2S3aQnOboQoGgLQVojbKfHmoWKcv1Q24fcAreCE6JPxVVuXp1h0Rik3EqA==",
+  "dgSpecHash": "gOKeXXgwnlqcI7lJmWssKVW0p076brNxDUkl6T6ZCapAIUP4Urd/enDqrWJCzfJH3HUfjRKbLvKkiF2E5vEy1g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Josean\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\Jwt.Entities.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\josea\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\Jwt.Entities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\josea\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\josea\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\josea\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

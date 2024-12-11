@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Josean\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\Jwt.Entities.csproj": {}
+    "C:\\Users\\josea\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\Jwt.Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Josean\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\Jwt.Entities.csproj": {
+    "C:\\Users\\josea\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\Jwt.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josean\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\Jwt.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\josea\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\Jwt.Entities.csproj",
         "projectName": "Jwt.Entities",
-        "projectPath": "C:\\Users\\Josean\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\Jwt.Entities.csproj",
-        "packagesPath": "C:\\Users\\Josean\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josean\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\obj\\",
+        "projectPath": "C:\\Users\\josea\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\Jwt.Entities.csproj",
+        "packagesPath": "C:\\Users\\josea\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\josea\\Desktop\\Fuentes\\Jwt\\Solution\\Jwt.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Josean\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\josea\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,12 +50,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.25, 6.0.25]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
