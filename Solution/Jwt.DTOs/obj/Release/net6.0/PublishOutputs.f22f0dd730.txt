@@ -1,3 +1,0 @@
-C:\out\Jwt.DTOs.dll
-C:\out\Jwt.DTOs.deps.json
-C:\out\Jwt.DTOs.pdb
