@@ -5,6 +5,7 @@
     <version>1.0.1</version>
     <authors>Josean</authors>
     <description>Jwt Project DTOs</description>
+    <repository type="git" commit="feecc9dae95993f5d2d9821d2904321ba04c4862" />
     <dependencies>
       <group targetFramework="net6.0">
         <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
@@ -12,6 +13,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\Josean\Desktop\Fuentes\Jwt\Solution\Jwt.DTOs\bin\Debug\net6.0\Jwt.DTOs.dll" target="lib\net6.0\Jwt.DTOs.dll" />
+    <file src="C:\Users\josea\Desktop\Fuentes\Jwt\Solution\Jwt.DTOs\bin\Debug\net6.0\Jwt.DTOs.dll" target="lib\net6.0\Jwt.DTOs.dll" />
   </files>
 </package>

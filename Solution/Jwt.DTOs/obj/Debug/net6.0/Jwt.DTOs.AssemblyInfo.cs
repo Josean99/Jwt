@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Jwt Project DTOs")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1+feecc9dae95993f5d2d9821d2904321ba04c4862")]
 [assembly: System.Reflection.AssemblyProductAttribute("Jwt.DTOs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Jwt.DTOs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.0")]
