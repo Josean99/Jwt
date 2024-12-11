@@ -2,7 +2,7 @@
 /Solution/Jwt_Frontend/.angular
 /Solution/Jwt_Frontend/node_modules
 /Solution/.vs
-/Solution/logs
+./Solution/logs
 /Solution/Jwt.Service/bin
 /Solution/Jwt.Service/obj
 /Solution/Jwt.DAL/bin
