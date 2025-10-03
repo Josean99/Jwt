@@ -4,7 +4,7 @@ docker rm $(docker stop $(docker ps -a -q --filter ancestor='solution-angular-ap
 docker rm $(docker stop $(docker ps -a -q --filter ancestor='postgres' --format="{{.ID}}"))
 docker rmi $(docker images -q solution-jwt)
 docker rmi $(docker images -q solution-angular-app)
-##docker rmi $(docker images -q postgres)
+docker rmi $(docker images -q postgres)
 
 ##construir
 cd ../Solution/
